@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{8EF79BB4-F849-42FD-9AEE-03E2E9543572}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SalesCampaign/Campaign.cs">
+    <Files>
+      <File FileName="SalesCampaign.Tests/InputValidatorTests.cs" Line="33" Column="15" />
+      <File FileName="SalesCampaign/InputValidator.cs" Line="23" Column="63" />
+      <File FileName="SalesCampaign/Program.cs" Line="30" Column="39" />
+      <File FileName="SalesCampaign/GetTotalPrizeMoneyCommand.cs" Line="42" Column="1" />
+      <File FileName="SalesCampaign/Core/IGetTotalPrizeMoneyCommand.cs" Line="3" Column="22" />
+      <File FileName="SalesCampaign.Tests/CampaignTests.cs" Line="49" Column="48" />
+      <File FileName="SalesCampaign.Tests/DataReaderTests.cs" Line="52" Column="9" />
+      <File FileName="SalesCampaign/Campaign.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.SalesCampaign PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

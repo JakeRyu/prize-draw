@@ -1,0 +1,11 @@
+/Users/jake/Projects/Fiserv/SalesCampaign/bin/Debug/netcoreapp2.0/SalesCampaign.deps.json
+/Users/jake/Projects/Fiserv/SalesCampaign/bin/Debug/netcoreapp2.0/SalesCampaign.runtimeconfig.json
+/Users/jake/Projects/Fiserv/SalesCampaign/bin/Debug/netcoreapp2.0/SalesCampaign.runtimeconfig.dev.json
+/Users/jake/Projects/Fiserv/SalesCampaign/bin/Debug/netcoreapp2.0/SalesCampaign.dll
+/Users/jake/Projects/Fiserv/SalesCampaign/bin/Debug/netcoreapp2.0/SalesCampaign.pdb
+/Users/jake/Projects/Fiserv/SalesCampaign/obj/Debug/netcoreapp2.0/SalesCampaign.csproj.CoreCompileInputs.cache
+/Users/jake/Projects/Fiserv/SalesCampaign/obj/Debug/netcoreapp2.0/SalesCampaign.AssemblyInfoInputs.cache
+/Users/jake/Projects/Fiserv/SalesCampaign/obj/Debug/netcoreapp2.0/SalesCampaign.AssemblyInfo.cs
+/Users/jake/Projects/Fiserv/SalesCampaign/obj/Debug/netcoreapp2.0/SalesCampaign.dll
+/Users/jake/Projects/Fiserv/SalesCampaign/obj/Debug/netcoreapp2.0/SalesCampaign.pdb
+/Users/jake/Projects/Fiserv/SalesCampaign/obj/Debug/netcoreapp2.0/SalesCampaign.csprojResolveAssemblyReference.cache

@@ -1,0 +1,73 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.0",
+    "signature": "d6dd85d3aaa7d9558893e59c326fcc56c44cfad8"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.0": {
+      "SalesCampaign/1.0.0": {
+        "dependencies": {
+          "Autofac": "4.6.1"
+        },
+        "runtime": {
+          "SalesCampaign.dll": {}
+        }
+      },
+      "Autofac/4.6.1": {
+        "dependencies": {
+          "System.ComponentModel": "4.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.1/Autofac.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Targets/1.0.1": {},
+      "System.ComponentModel/4.0.1": {
+        "dependencies": {
+          "System.Runtime": "4.1.0"
+        }
+      },
+      "System.Runtime/4.1.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Targets": "1.0.1"
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SalesCampaign/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Autofac/4.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/feXiAKiSe9XLK+fdnz0p1iDg6JCkOhjqMkw9ewGy0f6IzXgmPLDRa4FUg6nIGRm2sTO677w/76uJ5OJU6EiyA==",
+      "path": "autofac/4.6.1",
+      "hashPath": "autofac.4.6.1.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Targets/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6NdJ9OGB0zpi3TMowalIn/GxNpP8EY2KgdIfT9gb3xQ6sETebr8bjZrYSrGaElpvtnfl2Y36ApEYpNIwnuqbGQ==",
+      "path": "microsoft.netcore.targets/1.0.1",
+      "hashPath": "microsoft.netcore.targets.1.0.1.nupkg.sha512"
+    },
+    "System.ComponentModel/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Os6Qf40RhhDZJROc1hLsMJnoMA8UvN69iAKjX/+p2zsBVwcF8HIqQ6WCjrkaEmeIY/HoWSjDZXbe+oXjT21FZg==",
+      "path": "system.componentmodel/4.0.1",
+      "hashPath": "system.componentmodel.4.0.1.nupkg.sha512"
+    },
+    "System.Runtime/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HkLSsYLib2/GrIGvj/hErZvCtPJE3Y9gw5YZXD5sMIysxufespnnVXStQ4LEjNZH7pJGvcmsUZNtKwG13HMaxA==",
+      "path": "system.runtime/4.1.0",
+      "hashPath": "system.runtime.4.1.0.nupkg.sha512"
+    }
+  }
+}
