@@ -8,28 +8,29 @@ namespace SalesCampaign.Tests
         [Fact]
         public void AddDailyOrderAmounts_AddToCollection_Added()
         {
-            var sut = new Campaign();
-            var amounts1 = new int[] { 1, 2 };
-            var amounts2 = new int[] { 7, 8, 9 };
-            var expected = new int[] { 1, 2, 7, 8, 9 };
+            var campaign = new Campaign(); //meaning of sut?
+            var amounts1 = new[] { 1, 2 }; 
+            var amounts2 = new[] { 7, 8, 9 };
+            var expected = new[] { 1, 2, 7, 8, 9 };
 
-            sut.AddDailyOrderAmounts(amounts1);
-            sut.AddDailyOrderAmounts(amounts2);
+            campaign.AddDailyOrders(amounts1);
+            campaign.AddDailyOrders(amounts2);
 
-            Assert.Equal(expected, sut.GetAllOrderAmounts());
+            Assert.Equal(expected, campaign.GetAllOrders());
         }
 
         [Fact]
         public void RunDailyPrizeDraw_LargestTakesAwaySmallest_IncreaseTotalPrizeMoneyByDifference()
         {
-            var sut = new Campaign();
-            var amounts = new int[] { 1, 2, 7, 8, 9 };
+            var campaign = new Campaign();
+            var amounts = new[] { 1, 2, 7, 8, 9 };
             var expected = 9 - 1;
 
-            sut.AddDailyOrderAmounts(amounts);
-            sut.RunDailyPrizeDraw();
+            campaign.AddDailyOrders(amounts);   // if campaign doesn't exist without daily order, use
+                                                // constructor. var campaign = new Campaign(amounts)
+            campaign.DrawDailyPrize();
 
-            Assert.Equal(expected, sut.GetTotalPrizeMoney());
+            Assert.Equal(expected, campaign.GetTotalPrizeAmount());
         }
 
         [Fact]
@@ -40,16 +41,16 @@ namespace SalesCampaign.Tests
             var amounts2 = new int[] { 10, 20, 30 };
 			var expected = 3 - 1;
 
-			sut.AddDailyOrderAmounts(amounts1);
-            sut.RunDailyPrizeDraw();
-            Assert.Equal(expected, sut.GetTotalPrizeMoney());
+			sut.AddDailyOrders(amounts1);
+            sut.DrawDailyPrize();
+            Assert.Equal(expected, sut.GetTotalPrizeAmount());
 
 			expected += 30 - 2;
 
-            sut.AddDailyOrderAmounts(amounts2);
-            sut.RunDailyPrizeDraw();
+            sut.AddDailyOrders(amounts2);
+            sut.DrawDailyPrize();
 
-			Assert.Equal(expected, sut.GetTotalPrizeMoney());
+			Assert.Equal(expected, sut.GetTotalPrizeAmount());
         }
 
         [Fact]
@@ -59,10 +60,10 @@ namespace SalesCampaign.Tests
             var amounts = new int[] { 2, 2, 7, 8, 9, 10, 10, 10 };
             var expected = new int[] { 2, 7, 8, 9, 10, 10 };
 
-			sut.AddDailyOrderAmounts(amounts);
-			sut.RunDailyPrizeDraw();
+			sut.AddDailyOrders(amounts);
+			sut.DrawDailyPrize();
 
-			Assert.Equal(expected, sut.GetAllOrderAmounts());
+			Assert.Equal(expected, sut.GetAllOrders());
         }
 
         [Fact]
@@ -72,9 +73,9 @@ namespace SalesCampaign.Tests
             var orders = new int[1000000];
             var additionalOrder = new int[1];
 
-            sut.AddDailyOrderAmounts(orders);
+            sut.AddDailyOrders(orders);
 
-            Assert.Throws<InvalidOperationException>(() => sut.AddDailyOrderAmounts(additionalOrder));
+            Assert.Throws<InvalidOperationException>(() => sut.AddDailyOrders(additionalOrder));
         }
 
 		

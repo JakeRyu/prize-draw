@@ -8,7 +8,7 @@ namespace SalesCampaign
     public class Campaign : ICampaign
     {
         private const int TOTAL_NUMBER_OF_ORDERS_LIMIT = 1000000;
-        private int _totalPrizeMoney;
+        private decimal _totalPrizeMoney; // int can't handle money. use decimal
         private readonly List<int> _orderAmounts;
 
         public Campaign()
@@ -16,35 +16,35 @@ namespace SalesCampaign
             _orderAmounts = new List<int>();
         }
 
-        public int GetTotalPrizeMoney()
+        public decimal GetTotalPrizeAmount()
         {
             return _totalPrizeMoney;
         }
 
-        public void AddDailyOrderAmounts(int[] amounts)
+        public void AddDailyOrders(IEnumerable<int> amounts) //eventually amounts need to be object, not primitive values. Prefer type always
         {
-            var estimatedOrderNumber = amounts.Length + _orderAmounts.Count();
+            var estimatedOrderNumber = amounts.Count() + _orderAmounts.Count;
             if (estimatedOrderNumber > TOTAL_NUMBER_OF_ORDERS_LIMIT)
                 throw new InvalidOperationException("Order number excess error");
 
             _orderAmounts.AddRange(amounts);
         }
 
-        public void RunDailyPrizeDraw()
+        public void DrawDailyPrize()
         {
             var largest = _orderAmounts.Max();
             var smallest = _orderAmounts.Min();
 
             _totalPrizeMoney += largest - smallest;
 
-            var largestItem = _orderAmounts.Where(o => o == largest).First();
+            var largestItem = _orderAmounts.First(o => o == largest);
             _orderAmounts.Remove(largestItem);
 
-            var smallestItem = _orderAmounts.Where(o => o == smallest).First();
+            var smallestItem = _orderAmounts.First(o => o == smallest);
             _orderAmounts.Remove(smallest);
         }
 
-        public IEnumerable<int> GetAllOrderAmounts()
+        public IEnumerable<int> GetAllOrders()
         {
             return _orderAmounts;
         }

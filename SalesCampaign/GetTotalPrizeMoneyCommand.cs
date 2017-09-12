@@ -18,7 +18,7 @@ namespace SalesCampaign
 			_campaign = campaign;
 		}
 
-		public int Execute()
+		public decimal Execute()
 		{
 			var duration = _dataReader.ReadCampaignDuration(Console.ReadLine());
 
@@ -30,12 +30,12 @@ namespace SalesCampaign
 
 				_validator.ValidateDailyOrderAmounts(amounts);
 
-				_campaign.AddDailyOrderAmounts(amounts);
+				_campaign.AddDailyOrders(amounts);
 
-				_campaign.RunDailyPrizeDraw();
+				_campaign.DrawDailyPrize();
 			}
 
-			return _campaign.GetTotalPrizeMoney();
+			return _campaign.GetTotalPrizeAmount();
 		}
 	}
 }
