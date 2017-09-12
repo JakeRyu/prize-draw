@@ -4,9 +4,9 @@ namespace SalesCampaign.Core
 {
     public interface ICampaign
     {
-        void AddDailyOrderAmounts(int[] amounts);
-        IEnumerable<int> GetAllOrderAmounts();
-        void RunDailyPrizeDraw();
-        int GetTotalPrizeMoney();
+        void AddDailyOrders(IEnumerable<int> amounts); //favour interface
+        IEnumerable<int> GetAllOrders();
+        void DrawDailyPrize();
+        decimal GetTotalPrizeAmount();
     }
 }

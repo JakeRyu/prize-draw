@@ -9,3 +9,14 @@
 /Users/jake/Projects/Fiserv/SalesCampaign/obj/Debug/netcoreapp2.0/SalesCampaign.dll
 /Users/jake/Projects/Fiserv/SalesCampaign/obj/Debug/netcoreapp2.0/SalesCampaign.pdb
 /Users/jake/Projects/Fiserv/SalesCampaign/obj/Debug/netcoreapp2.0/SalesCampaign.csprojResolveAssemblyReference.cache
+C:\dev\prize-draw\SalesCampaign\obj\Debug\netcoreapp2.0\SalesCampaign.csproj.CoreCompileInputs.cache
+C:\dev\prize-draw\SalesCampaign\obj\Debug\netcoreapp2.0\SalesCampaign.AssemblyInfoInputs.cache
+C:\dev\prize-draw\SalesCampaign\obj\Debug\netcoreapp2.0\SalesCampaign.AssemblyInfo.cs
+C:\dev\prize-draw\SalesCampaign\obj\Debug\netcoreapp2.0\SalesCampaign.dll
+C:\dev\prize-draw\SalesCampaign\obj\Debug\netcoreapp2.0\SalesCampaign.pdb
+C:\dev\prize-draw\SalesCampaign\bin\Debug\netcoreapp2.0\SalesCampaign.deps.json
+C:\dev\prize-draw\SalesCampaign\bin\Debug\netcoreapp2.0\SalesCampaign.runtimeconfig.json
+C:\dev\prize-draw\SalesCampaign\bin\Debug\netcoreapp2.0\SalesCampaign.runtimeconfig.dev.json
+C:\dev\prize-draw\SalesCampaign\bin\Debug\netcoreapp2.0\SalesCampaign.dll
+C:\dev\prize-draw\SalesCampaign\bin\Debug\netcoreapp2.0\SalesCampaign.pdb
+C:\dev\prize-draw\SalesCampaign\obj\Debug\netcoreapp2.0\SalesCampaign.csprojResolveAssemblyReference.cache

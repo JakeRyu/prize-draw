@@ -2,6 +2,6 @@
 {
     public interface IGetTotalPrizeMoneyCommand
     {
-        int Execute();
+        decimal Execute();
     }
 }
